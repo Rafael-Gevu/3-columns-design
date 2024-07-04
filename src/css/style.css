@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+@media(max-width:762px){
+    body{
+        height: initial;
+        margin: 20px auto 20px;
+    }
+}
+
+
+main {
+    max-width: 915px;
+    display: flex;
+}
+@media(max-width:762px){
+    main {
+        flex-direction: column;
+    }
+}
+.sedan {
+    background-color: var(--primary-orange);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+
+
+    flex: 1;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media (max-width: 762px){
+    .sedan {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+
+    padding: 10%;
+    border-top-right-radius: 10px;
+    }
+}
+
+
+
+
+
+.suvs {
+    background-color: var(--primary-cyan);
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 300px;
+}
+
+@media (max-width: 762px){
+    .suvs {
+    padding: 10%;
+    }
+}
+
+
+
+.luxury {
+    background-color: var(--primary-dark-cyan);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media (max-width: 762px){
+    .luxury {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 10%;
+    border-bottom-right-radius: 10px;
+    }
+}
+
+
+img {
+    margin: 40px 0px;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--neutral-light);
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+
+.sedan p , .suvs p , .luxury p {
+    color: var(--neutral-transparent);
+    margin-bottom: 90px;
+    margin-top: auto;
+    align-self: baseline;
+    
+}
+img {
+    width: 60px;
+}
+
+.button {
+    align-self: flex-start;
+    margin-top: auto;
+    border: none;
+    padding: 20px;
+    width: 140px;
+    border-radius: 30px;
+    font-size: 15px;
+    
+}
+.sedan .button {
+    color: var(--primary-orange);
+}
+.suvs .button {
+    color: var(--primary-cyan);
+}
+.luxury .button {
+    color: var(--primary-dark-cyan);
+}
+
